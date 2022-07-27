@@ -1,3 +1,4 @@
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -23,11 +24,22 @@ body{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 18px;
     line-height: 1.2;
-    background: rgb(212,6,98);
-    background: linear-gradient(0deg, rgba(212,6,98,1) 0%, rgba(255,255,255,1) 85%, rgba(255,255,255,1) 100%);
+    background-color:  #fbfbfb;
     color: #0f0f0f;
 }
-
+html, body { 
+    height: 100%; 
+    margin: 0; 
+    overflow: hidden;
+    overflow: clip; 
+    contain: content;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000; 
+  }
 header {
     display: flex;
     justify-content: space-between;
@@ -35,8 +47,7 @@ header {
     padding: 16px;
     height: 90px;
     width: 100%;
-    background: rgb(212,6,98);
-    background: linear-gradient(250deg, rgba(212,6,98,1) 0%, rgba(255,255,255,0.7763480392156863) 32%, rgba(255,255,255,1) 100%);
+    background-color: #fbfbfb;
     position: fixed;
     top: 0;
     left: 0;
@@ -62,7 +73,7 @@ section {
 #boton{
     width: 10;
     height: 10;
-    background-color:  #d40662;
+    background-color:  #f7368d;
     font-size: 20px;
     color: #fbfbfb;
     padding: 12px 20px;
@@ -72,7 +83,7 @@ section {
 }
 
 #boton:hover{
-    background-color: #ca6191;
+    background-color: #fcbdd9;
     transition: background-color 0.3s;
     border-radius: 50px;
 }
@@ -84,7 +95,7 @@ section#inicio {
 }
 
 .logo{
-    width: 80px;
+    width: 120px;
     margin-left: 16px;
 }
 
@@ -102,9 +113,8 @@ li.menu-item a{
     display: inline-block
 }
 
-li.menu-item:hover,
-li-menu.item.active {
-    background-color: #fcc3dc;
+li.menu-item:hover {
+    background-color: #fcbdd9;
     transition: background-color 0.3s;
     border-radius: 5%;
 }
@@ -206,7 +216,7 @@ ul#contact-links li{
 }
 
 ul#contact-links li:hover {
-    background-color: #fcc3dc;
+    background-color: #fcbdd9;
     transition: background-color 0.3s;
     border-radius: 5%;
 }
@@ -221,7 +231,7 @@ footer{
     height: 90px;
     align-items: center;
     justify-content: center;
-    background-color: #d40662;
+    background-color:  #f7368d;
     color: #fbfbfb;
 }
 
